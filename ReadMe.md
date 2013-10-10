@@ -53,4 +53,4 @@ Open Source License information following soon!
 (c) 2013 Stephan Thamm,  thammi@chaossource.net
 (c) 2013 Kilian Ulbrich, kilian@innovailable.eu
 
-Part of the [palava project](https://blog.palava.tv)
+Part of the [palava project](https://palava.tv)

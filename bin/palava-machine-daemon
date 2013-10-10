@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+require 'daemons'
+
+Daemons.run("#{File.dirname(__FILE__)}/palava-machine",
+  multiple: true,
+  ARGV: ARGV + ['--', '4240', '5']
+)

@@ -46,11 +46,23 @@ To run the test suite use
 
 ## Credits
 
-Open Source License information following soon!
+AGPLv3. Part of the [palava project](https://palava.tv).
 
-(c) 2013 Jan Lelis,      jan@signaling.io
-(c) 2013 Marius Melzer,  marius@signaling.io
-(c) 2013 Stephan Thamm,  thammi@chaossource.net
-(c) 2013 Kilian Ulbrich, kilian@innovailable.eu
+Copyright 2013 Jan Lelis       jan@signaling.io
+Copyright 2013 Marius Melzer   marius@signaling.io
+Copyright 2013 Stephan Thamm   thammi@chaossource.net
+Copyright 2013 Kilian Ulbrich  kilian@innovailable.eu
 
-Part of the [palava project](https://palava.tv)
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public
+License along with this program. If not, see
+<http://www.gnu.org/licenses/>.

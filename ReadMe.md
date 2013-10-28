@@ -48,9 +48,9 @@ To run the test suite use
 
 AGPLv3. Part of the [palava project](https://palava.tv).
 
-Copyright 2013 Jan Lelis       jan@signaling.io
-Copyright 2013 Marius Melzer   marius@signaling.io
-Copyright 2013 Stephan Thamm   thammi@chaossource.net
+Copyright 2013 Jan Lelis       jan@signaling.io<br/>
+Copyright 2013 Marius Melzer   marius@signaling.io<br/>
+Copyright 2013 Stephan Thamm   thammi@chaossource.net<br/>
 Copyright 2013 Kilian Ulbrich  kilian@innovailable.eu
 
 This program is free software: you can redistribute it and/or modify

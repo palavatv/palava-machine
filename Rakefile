@@ -158,6 +158,6 @@ task :spec do
   sh %[rspec spec]
 end
 
-task :default => :spec
+task :default => :gemspec
 task :test    => :spec
 

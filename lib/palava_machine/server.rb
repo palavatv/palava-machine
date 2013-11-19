@@ -15,7 +15,7 @@ module PalavaMachine
     DEFAULT_FEATURES = [
       CoreSupport,
       CoreEvents,
-      VerifyHandshake,
+#      VerifyHandshake,
       ServerInfo,
     ]
 

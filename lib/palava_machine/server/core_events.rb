@@ -17,11 +17,11 @@ module PalavaMachine
       def ws_close(ws, why)
         ws_close_unannounce(ws)
       rescue MessageError => e
-        warn "*** Error while closing connection *** #{e.class} ***\n" + e.message + "\n  " + e.backtrace*"\n  "
+        warn "*** Error while closing connection *** #{e.class} ***\n" + (e.message || "") + "\n  " + e.backtrace*"\n  "
       end
 
       def ws_error(ws, e)
-        warn "*** Socket Error *** #{e.class} ***\n" + (e.message || "") + "\n  " + (e.backtrace && e.backtrace*"\n  ")
+        warn "*** Socket Error *** #{e.class} ***\n" + (e.message || "") + "\n  " + (e.backtrace ? e.backtrace*"\n  " : "")
         ws.close 4242
       end
 

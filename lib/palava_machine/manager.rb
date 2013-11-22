@@ -50,7 +50,7 @@ module PalavaMachine
     LUA
 
     SCRIPT_LEAVE_ROOM = <<-LUA
-      redis.call('hincrby', KEYS[7], (ARGV[3] - tonumber(redis.call('get', KEYS[3]))) / 60, 1) --stats
+      redis.call('hincrby', KEYS[7], math.floor((ARGV[3] - tonumber(redis.call('get', KEYS[3]))) / 60), 1) --stats
       redis.call('srem', KEYS[1], ARGV[1])
       redis.call('del', KEYS[3])
       redis.call('del', KEYS[4])

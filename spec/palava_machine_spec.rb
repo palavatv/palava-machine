@@ -81,6 +81,7 @@ describe 'uvc-server-rtc' do
 
   describe 'handshake' do
     it 'will return error if no protocol given' do
+      pending 'em-websocket protocol support'
       c = Client.new(4233, nil)
       c.send_message(event: 'info')
       c.last_json_message.should == {
@@ -90,6 +91,7 @@ describe 'uvc-server-rtc' do
     end
 
     it 'will return error if prefix is not "palava."' do
+      pending 'em-websocket protocol support'
       c = Client.new(4233, "palaba.#{SPEC_PROTOCOL_VERSION.to_f}")
       c.send_message(event: 'info')
       c.last_json_message.should == {
@@ -99,6 +101,7 @@ describe 'uvc-server-rtc' do
     end
 
     it 'will return error if wrong minor version given' do
+      pending 'em-websocket protocol support'
       c = Client.new(4233, 'palava.0.0')
       c.send_message(event: 'info')
       c.last_json_message.should == {

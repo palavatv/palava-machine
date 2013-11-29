@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    palava_machine (1.0.0)
+    palava_machine (1.0.1)
       bson_ext
       bundler
       daemons
@@ -39,7 +39,7 @@ GEM
     mongo (1.9.2)
       bson (~> 1.9.2)
     mono_logger (1.1.0)
-    multi_json (1.8.1)
+    multi_json (1.8.2)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack

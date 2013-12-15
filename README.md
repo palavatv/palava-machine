@@ -46,7 +46,7 @@ To run the test suite use
 
 ## Credits
 
-    AGPLv3. Part of the [palava project](https://palava.tv).
+AGPLv3. Part of the [palava project](https://palava.tv).
 
     Copyright 2013 Jan Lelis       jan@signaling.io
     Copyright 2013 Marius Melzer   marius@signaling.io

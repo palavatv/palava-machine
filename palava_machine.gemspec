@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.summary     = "The machine behind palava."
   s.description = "A WebRTC Signaling Server implemented with WebSockets, EventMachine and Redis Pub-Sub"
   s.files = Dir.glob(%w[{lib,test}/**/*.rb bin/* [A-Z]*.{txt,rdoc} ext/**/*.{rb,c} features/**/*]) + %w{Rakefile palava_machine.gemspec Gemfile}
-  s.extra_rdoc_files = ["ReadMe.md", "ChangeLog.md", "ProtocolChangeLog.md", "LICENSE.txt"]
+  s.extra_rdoc_files = ["README.md", "ChangeLog.md", "ProtocolChangeLog.md", "LICENSE.txt"]
   s.executables = ['palava-machine', 'palava-machine-daemon']
 
   s.add_dependency 'em-websocket'

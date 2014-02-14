@@ -8,7 +8,7 @@ require_relative 'vendor/web_socket' # TODO this lib is not compat with Ruby 2.0
 
 describe 'uvc-server-rtc' do
   SPEC_PROTOCOL_VERSION = '1.0.0'
-  SLEEP_FOR        = 0.1 # how many seconds wait for response
+  SLEEP_FOR        = 0.01 # how many seconds wait for response
   BASE_DIR         = File.dirname(__FILE__) + '/../'
   REDIS_DB         = 7
   UUID             = /\A\w{8}-\w{4}-\w{4}-\w{4}-\w{12}\z/
@@ -52,6 +52,7 @@ describe 'uvc-server-rtc' do
 
     def send_message(message)
       send_raw_message(JSON.dump(message))
+      sleep SLEEP_FOR
     end
 
     def received_messages(sleep_for = SLEEP_FOR)
@@ -60,7 +61,10 @@ describe 'uvc-server-rtc' do
     end
 
     def last_json_message(sleep_for = SLEEP_FOR)
-      sleep sleep_for
+      100.times do
+        break unless @received.empty?
+        sleep sleep_for
+      end
       raise "no messages received, yet (try increasing sleep time)" if @received.empty?
       JSON.parse @received.last
     end
@@ -364,6 +368,7 @@ describe 'uvc-server-rtc' do
       keys.should_not == []
 
       peaks = @redis.hgetall keys[0]
+
       peaks.should == { "2" => "1" }
     end
 

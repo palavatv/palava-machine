@@ -167,7 +167,7 @@ module PalavaMachine
     private :get_statuses_for_members
 
     def send_joined_room(connection_id, members_with_statuses)
-      @connections[connection_id].send_text({
+      @connections[connection_id] and @connections[connection_id].send_text({
         event: 'joined_room',
         own_id: connection_id,
         peers: members_with_statuses,

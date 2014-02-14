@@ -8,6 +8,7 @@ require_relative 'vendor/web_socket' # TODO this lib is not compat with Ruby 2.0
 
 describe 'uvc-server-rtc' do
   SPEC_PROTOCOL_VERSION = '1.0.0'
+  SLEEP_FOR        = 0.1 # how many seconds wait for response
   BASE_DIR         = File.dirname(__FILE__) + '/../'
   REDIS_DB         = 7
   UUID             = /\A\w{8}-\w{4}-\w{4}-\w{4}-\w{12}\z/
@@ -53,12 +54,12 @@ describe 'uvc-server-rtc' do
       send_raw_message(JSON.dump(message))
     end
 
-    def received_messages(sleep_for = 0.1)
+    def received_messages(sleep_for = SLEEP_FOR)
       sleep sleep_for
       @received
     end
 
-    def last_json_message(sleep_for = 0.01)
+    def last_json_message(sleep_for = SLEEP_FOR)
       sleep sleep_for
       raise "no messages received, yet (try increasing sleep time)" if @received.empty?
       JSON.parse @received.last
@@ -470,7 +471,7 @@ describe 'uvc-server-rtc' do
     it 'returns error if not in any room' do
       payload = { "event" => "offer" }
       client1.send_message(event: 'send_to_peer', peer_id: "50fa50ab-116c-4f83-b0a8-10f267aeab1b", data: payload)
-      client1.last_json_message(0.1).should == { "event" => "error", "message" => "currently not in any room" }
+      client1.last_json_message(SLEEP_FOR).should == { "event" => "error", "message" => "currently not in any room" }
     end
   end
 

@@ -69,7 +69,7 @@ module PalavaMachine
 
 
     def initialize(options = {})
-      @redis_address = 'localhost:6379'
+      @redis_address = ENV['PALAVA_REDIS'] || 'localhost:6379'
       @redis_db      = options[:db] || 0
       @connections   = SocketStore.new
       @log           = Logger.new(STDOUT)

@@ -234,7 +234,7 @@ module PalavaMachine
         @redis.sismember("store:room:members:#{room_id}", peer_id) do |is_member|
           return_error connection_id, 'unknown peer' if is_member.nil? || is_member.zero?
 
-          unless %w[offer answer ice_candidate].include? data['event']
+          unless %w[offer answer ice_candidate message].include? data['event']
             return_error connection_id, 'event not allowed'
           end
 

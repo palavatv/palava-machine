@@ -41,6 +41,10 @@ To run the test suite use
 
     $ rspec
 
+## Issues
+
+Please report issues to the [palava Repository](https://github.com/palavatv/palava/issues).
+
 ## Credits
 
 AGPLv3. Part of the [palava project](https://palava.tv).

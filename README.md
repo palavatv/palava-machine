@@ -1,11 +1,16 @@
 # PalavaMachine
 
+[palava.tv](https://palava.tv) is simplistic video communication with your friends and colleagues from within your web browser. It is build on top of the [WebRTC](https://webrtc.org/) technology. No registration or browser plugin required.
+
+Please see the [palava repository](https://github.com/palavatv/palava) for an overview of palava and report issues there.
+
 PalavaMachine is a WebRTC signaling server. Signaling describes the process of finding other peers and exchange information about how to establish a media connection. It works together with the [palava-client](https://github.com/palavatv/palava-client).
 
 The server is implemented in [EventMachine](http://rubyeventmachine.com/) and [Redis PubSub](http://redis.io/topics/pubsub) and communication to the clients is done via WebSockets. See it in action at [palava.tv.](https://palava.tv)
 
-Checkout our [blog post](https://blog.palava.tv/2013/12/How_to_host_your_own_WebRTC_Video_Conferencing_on_ubuntu/) for information on how to setup your own palava!
+**This application is not part of the palava stack anymore.**
 
+It was replaced by [SignalTower](https://github.com/farao/signaltower/), which is written in Elixir and uses the same protocol. Although this project is currently not actively worked on, it still functions as a drop-in replacement for the SignalTower and might also be developed further at some point.
 
 ## Installation & Usage
 

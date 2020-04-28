@@ -6,7 +6,7 @@ Please see the [palava repository](https://github.com/palavatv/palava) for an ov
 
 PalavaMachine is a WebRTC signaling server. Signaling describes the process of finding other peers and exchange information about how to establish a media connection. It works together with the [palava-client](https://github.com/palavatv/palava-client).
 
-The server is implemented in [EventMachine](http://rubyeventmachine.com/) and [Redis PubSub](http://redis.io/topics/pubsub) and communication to the clients is done via WebSockets. See it in action at [palava.tv.](https://palava.tv)
+The server is implemented in [EventMachine](https://github.com/eventmachine/eventmachine/) and [Redis PubSub](https://redis.io/topics/pubsub) and communication to the clients is done via WebSockets. See it in action at [palava.tv.](https://palava.tv)
 
 **This application is not part of the palava stack anymore.**
 
@@ -14,19 +14,11 @@ It was replaced by [SignalTower](https://github.com/farao/signaltower/), which i
 
 ## Installation & Usage
 
-Make sure you have redis(http://redis.io/download) installed, then clone this repository and run
-
-    $ bundle install
-
-Start the server with
-
-    $ bin/palava-machine
-
-Alternatively, download the [palava_machine gem](http://rubygems.org/gems/palava_machine) from rubygems.org:
+Make sure you have redis(https://redis.io/download) installed, then install the [palava_machine gem](https://rubygems.org/gems/palava_machine):
 
     $ gem install palava_machine
 
-And run:
+To start the server on port 4233, run:
 
     $ palava-machine
 
@@ -57,11 +49,12 @@ To run the test suite use
 
 AGPLv3. Part of the [palava project](https://palava.tv).
 
-    Copyright (C) 2013 Jan Lelis          mail@janlelis.de
+    Copyright (C) 2014-2020 palava e. V.  contact@palava.tv
+
+    Copyright (C) 2013 Jan Lelis          hi@ruby.consulting
     Copyright (C) 2013 Marius Melzer      marius@rasumi.net
     Copyright (C) 2013 Stephan Thamm      stephan@innovailable.eu
     Copyright (C) 2013 Kilian Ulbrich     kilian@innovailable.eu
-    Copyright (C) 2014 palava e. V.       contact@palava.tv
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as

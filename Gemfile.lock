@@ -39,8 +39,8 @@ GEM
       bson (= 1.12.5)
     mono_logger (1.1.0)
     multi_json (1.11.2)
-    rack (1.6.4)
-    rack-protection (1.5.3)
+    rack (1.6.13)
+    rack-protection (1.5.5)
       rack
     rake (11.1.1)
     redis (3.2.2)

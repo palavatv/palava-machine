@@ -32,8 +32,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'logger-colors'
   s.add_dependency 'local_port'
 
-  s.add_dependency 'whiskey_disk'
-
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec'
 end

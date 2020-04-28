@@ -13,7 +13,6 @@ PATH
       redis (>= 2.2.0)
       resque
       resque-scheduler
-      whiskey_disk
 
 GEM
   remote: https://rubygems.org/
@@ -89,8 +88,6 @@ GEM
       concurrent-ruby (~> 1.0)
     vegas (0.1.11)
       rack (>= 1.0.0)
-    whiskey_disk (0.6.24)
-      rake
 
 PLATFORMS
   ruby

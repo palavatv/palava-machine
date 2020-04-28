@@ -35,15 +35,6 @@ def run_scheduler
 end
 
 
-namespace :deploy do
-  # desc 'whiskey_disk deploy hook'
-  # task :post_deploy => %w[
-  #   resque:restart_workers
-  #   resque:restart_scheduler
-  # ]
-end
-
-
 namespace :resque do
   task :environment do
     require 'resque'

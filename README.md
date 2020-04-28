@@ -40,6 +40,13 @@ Stop it with
 
     $ palava-machine-daemon stop
 
+### Configure using Environment Variables
+
+You can set the address of the redis server via environment variable. The default is 'localhost:6379'.
+
+    $ export PALAVA_REDIS="some_ip:some_port"
+    $ bin/palava-machine
+
 ### Specs
 
 To run the test suite use

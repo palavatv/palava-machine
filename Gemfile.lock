@@ -3,7 +3,6 @@ PATH
   specs:
     palava_machine (1.0.1)
       bson_ext
-      bundler
       daemons
       em-hiredis (~> 0.2.1)
       em-websocket
@@ -11,7 +10,6 @@ PATH
       local_port
       logger-colors
       mongo
-      rake
       redis (>= 2.2.0)
       resque
       resque-scheduler
@@ -86,6 +84,7 @@ PLATFORMS
 
 DEPENDENCIES
   palava_machine!
+  rake
   rspec
 
 BUNDLED WITH

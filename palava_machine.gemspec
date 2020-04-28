@@ -28,13 +28,13 @@ Gem::Specification.new do |s|
   s.add_dependency 'mongo'
   s.add_dependency 'bson_ext'
 
-  s.add_dependency 'bundler'
   s.add_dependency 'daemons'
   s.add_dependency 'logger-colors'
   s.add_dependency 'local_port'
-  s.add_dependency 'rake'
+
   s.add_dependency 'whiskey_disk'
 
+  s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec'
 end
 

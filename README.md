@@ -1,4 +1,4 @@
-# PalavaMachine
+# PalavaMachine [![[version]](https://badge.fury.io/rb/palava_machine.svg)](https://badge.fury.io/rb/palava_machine)  [![[travis]](https://travis-ci.org/janlelis/palava_machine.png)](https://travis-ci.org/janlelis/palava_machine)
 
 [palava.tv](https://palava.tv) is simplistic video communication with your friends and colleagues from within your web browser. It is build on top of the [WebRTC](https://webrtc.org/) technology. No registration or browser plugin required.
 
@@ -6,9 +6,9 @@ Please see the [palava repository](https://github.com/palavatv/palava) for an ov
 
 PalavaMachine is a WebRTC signaling server. Signaling describes the process of finding other peers and exchange information about how to establish a media connection. It works together with the [palava-client](https://github.com/palavatv/palava-client).
 
-The server is implemented in [EventMachine](https://github.com/eventmachine/eventmachine/) and [Redis PubSub](https://redis.io/topics/pubsub) and communication to the clients is done via WebSockets. See it in action at [palava.tv.](https://palava.tv)
+The server is implemented in [EventMachine](https://github.com/eventmachine/eventmachine/) and [Redis PubSub](https://redis.io/topics/pubsub) and communication to the clients is done via WebSockets.
 
-**This application is not part of the palava stack anymore.**
+**This application is currently not part of the palava.tv stack**
 
 It was replaced by [SignalTower](https://github.com/farao/signaltower/), which is written in Elixir and uses the same protocol. Although this project is currently not actively worked on, it still functions as a drop-in replacement for the SignalTower and might also be developed further at some point.
 
@@ -22,7 +22,7 @@ To start the server on port 4233, run:
 
     $ palava-machine
 
-### Deamonized Version
+### Daemonized Version
 
 The PalavaMachine can be started as a daemon process for production usage:
 

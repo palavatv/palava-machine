@@ -37,8 +37,8 @@ module PalavaMachine
           manager.shutdown!
           EM.stop
         else
-          manager.announce_shutdown(timeout)
-          EM.next_tick do
+          EM.add_timer(0) do
+            manager.announce_shutdown(timeout)
             manager.shutdown!(timeout)
             EM.stop
           end

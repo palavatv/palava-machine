@@ -1,16 +1,17 @@
 PATH
   remote: .
   specs:
-    palava_machine (1.0.1)
+    palava_machine (1.0.2)
       bson_ext
-      daemons
-      em-hiredis (~> 0.2.1)
-      em-websocket
-      hiredis (~> 0.4.5)
+      daemons (~> 1.3.1)
+      em-hiredis (~> 0.3.1)
+      em-websocket (~> 0.5.1)
+      eventmachine (~> 1.2.7)
+      hiredis (~> 0.6.3)
       local_port
       logger-colors
       mongo
-      redis (>= 2.2.0)
+      redis (~> 4.1.3)
       resque
       resque-scheduler
 
@@ -22,8 +23,9 @@ GEM
     concurrent-ruby (1.1.6)
     daemons (1.3.1)
     diff-lcs (1.3)
-    em-hiredis (0.2.1)
-      hiredis (~> 0.4.0)
+    em-hiredis (0.3.1)
+      eventmachine (~> 1.0)
+      hiredis (~> 0.6.0)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -33,7 +35,7 @@ GEM
     fugit (1.3.4)
       et-orbi (~> 1.1, >= 1.1.8)
       raabro (~> 1.1)
-    hiredis (0.4.5)
+    hiredis (0.6.3)
     http_parser.rb (0.6.0)
     local_port (0.1.0)
     logger-colors (1.0.0)

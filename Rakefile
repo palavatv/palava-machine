@@ -1,8 +1,9 @@
 require 'fileutils'
 require 'bundler/setup'
 require 'yaml'
+require 'redis'
 require 'resque/tasks'
-require 'resque_scheduler/tasks'
+require 'resque/scheduler/tasks'
 
 ROOT_PATH = File.dirname(__FILE__) + '/../'
 
@@ -33,7 +34,6 @@ def run_scheduler
   pid = spawn(env_vars, "rake resque:scheduler", ops)
   Process.detach(pid)
 end
-
 
 namespace :resque do
   task :environment do
@@ -149,6 +149,6 @@ task :spec do
   sh %[rspec spec]
 end
 
-task :default => :gemspec
+task :default => :spec
 task :test    => :spec
 

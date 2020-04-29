@@ -175,7 +175,7 @@ class WebSocket
       case @web_socket_version
         when "hixie-75", "hixie-76"
           data = force_encoding(data.dup(), "ASCII-8BIT")
-          write("\x00#{data}\xff")
+          write("\x00".b + data + "\xff".b)
           flush()
         else
           send_frame(OPCODE_TEXT, data, !@server)
@@ -347,7 +347,7 @@ class WebSocket
     end
 
     def gets(rs = $/)
-      line = @socket.gets(rs)
+      line = @socket.gets(rs.b)
       $stderr.printf("recv> %p\n", line) if WebSocket.debug
       return line
     end

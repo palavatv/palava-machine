@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 module PalavaMachine
-  VERSION          = "1.0.1"
+  VERSION          = "1.0.2"
   PROTOCOL_VERSION = "1.0.0"
 
   def self.protocol_identifier

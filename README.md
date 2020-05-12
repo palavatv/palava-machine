@@ -1,4 +1,4 @@
-# PalavaMachine [![[version]](https://badge.fury.io/rb/palava_machine.svg)](https://badge.fury.io/rb/palava_machine)  [![[travis]](https://travis-ci.org/janlelis/palava_machine.png)](https://travis-ci.org/palavatv/palava-machine)
+# PalavaMachine [![[version]](https://badge.fury.io/rb/palava_machine.svg)](https://badge.fury.io/rb/palava_machine)  [![[travis]](https://travis-ci.org/janlelis/palava-machine.png)](https://travis-ci.org/palavatv/palava-machine)
 
 [palava.tv](https://palava.tv) is simplistic video communication with your friends and colleagues from within your web browser. It is build on top of the [WebRTC](https://webrtc.org/) technology. No registration or browser plugin required.
 

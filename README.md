@@ -1,8 +1,10 @@
-# PalavaMachine [![[version]](https://badge.fury.io/rb/palava_machine.svg)](https://badge.fury.io/rb/palava_machine)  [![[travis]](https://travis-ci.org/palavatv/palava-machine.svg)](https://travis-ci.org/palavatv/palava-machine)
+# palava | machine [![[version]](https://badge.fury.io/rb/palava_machine.svg)](https://badge.fury.io/rb/palava_machine)  [![[travis]](https://travis-ci.org/palavatv/palava-machine.svg)](https://travis-ci.org/palavatv/palava-machine)
 
-[palava.tv](https://palava.tv) is simplistic video communication with your friends and colleagues from within your web browser. It is build on top of the [WebRTC](https://webrtc.org/) technology. No registration or browser plugin required.
+[palava.tv](https://palava.tv) is a cost-free, simple to use, secure, and open source platform for video calls, built on top of the [WebRTC](https://webrtc.org/) technology.
 
-See [palavatv/palava](https://github.com/palavatv/palava) for an overview of all parts of palava.tv.
+This repository contains an alternative implementation of the palava.tv signaling backend. There is an overview of all parts of palava.tv at [palavatv/palava](https://github.com/palavatv/palava).
+
+## Descripiton
 
 PalavaMachine is a WebRTC signaling server. Signaling describes the process of finding other peers and exchange information about how to establish a media connection. It works together with the [palava-client](https://github.com/palavatv/palava-client).
 

@@ -258,6 +258,12 @@ module PalavaMachine
       @connections.dup.sockets.each{ |ws| ws.close(4200) } # TODO double check this one
     end
 
+    # TODO count pongs and disconnect
+    def ping(connection_id)
+      @connections[connection_id] and @connections[connection_id].send_text({
+        event: 'pong',
+      }.to_json)
+    end
 
     private
 

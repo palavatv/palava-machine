@@ -480,6 +480,15 @@ describe 'uvc-server-rtc' do
     end
   end
 
+  describe 'ping' do
+    it 'returns pong' do
+      client1.send_message(event: 'ping')
+      client1.last_json_message.should == {
+        "event" => "pong",
+      }
+    end
+  end
+
   describe 'shutdown' do
     it 'sends a shutdown message to all connected peers' do
       pid = create_socket_server(4235, seconds = 1)

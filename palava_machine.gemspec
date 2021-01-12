@@ -4,7 +4,7 @@ name = 'palava_machine'
 require File.dirname(__FILE__) + "/lib/#{name}/version"
 
 Gem::Specification.new do |s|
-  s.required_ruby_version = '~> 2.1'
+  s.required_ruby_version = '>= 2.1'
   s.name        = name
   s.version     = PalavaMachine::VERSION
   s.authors     = ["Jan Lelis", "Marius Melzer", "Stephan Thamm", "Kilian Ulbrich"]

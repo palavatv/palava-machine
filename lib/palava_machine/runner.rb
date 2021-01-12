@@ -30,8 +30,8 @@ BANNER
       self.db               = (argv[1] ||    0).to_i
       self.address          = argv[2]  || "0.0.0.0"
       self.shutdown_timeout = (argv[3] || 3).to_i
-      self.redis_address    = argv[4]  || 'localhost:6379'
-      self.mongo_address    = argv[5]  || 'localhost:27017'
+      self.redis_address    = argv[4]  || ENV['PALAVA_REDIS'] || 'localhost:6379'
+      self.mongo_address    = argv[5]  || ENV['PALAVA_MONGO'] || 'localhost:27017'
     end
   end
 

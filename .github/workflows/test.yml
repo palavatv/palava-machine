@@ -25,5 +25,9 @@ jobs:
       with:
         ruby-version: ${{matrix.ruby}}
         bundler-cache: true
+    - name: Set up redis
+      uses: shogo82148/actions-setup-redis@v1
+      with:
+        redis-version: '5.x'
     - name: Run tests
       run: bundle exec rake

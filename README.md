@@ -1,4 +1,4 @@
-# palava | machine [![[version]](https://badge.fury.io/rb/palava_machine.svg)](https://badge.fury.io/rb/palava_machine)  [![[travis]](https://travis-ci.org/palavatv/palava-machine.svg)](https://travis-ci.org/palavatv/palava-machine)
+# palava | machine [![[version]](https://badge.fury.io/rb/palava_machine.svg)](https://badge.fury.io/rb/palava_machine) [![[ci]](https://github.com/palavatv/palava-machine/workflows/Test/badge.svg)](https://github.com/palavatv/palava-machine/actions?query=workflow%3ATest)
 
 [palava.tv](https://palava.tv) is a cost-free, simple to use, secure, and open source platform for video calls, built on top of the [WebRTC](https://webrtc.org/) technology.
 
